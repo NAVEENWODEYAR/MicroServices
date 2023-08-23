@@ -1,0 +1,15 @@
+# Eureka client configuration
+
+server:
+  port: 8081
+  
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bookstoredb?createDatabaseIfNotExist=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: boss
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
